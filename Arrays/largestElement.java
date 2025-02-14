@@ -16,7 +16,7 @@ public class largestElement {
         Arrays.sort(arr);
         return arr[arr.length - 1];
     }
-
+ 
     //optimal solution
     public static int largest2(int[] arr){
         int max = arr[0];
