@@ -1,6 +1,7 @@
 package com.takeyouforward.Arrays;
 
 import java.util.Arrays;
+import java.util.Collections;
 
 public class mergeTwoSortedArrays {
     public static void main(String[] args) {
@@ -8,7 +9,7 @@ public class mergeTwoSortedArrays {
         int[] arr2 = {2, 3, 9};
         int n = arr.length;
         int m = arr2.length;
-        sort(arr,n,arr2,m);
+        merge(arr,n,arr2,m);
         System.out.println(Arrays.toString(arr));
         System.out.println(Arrays.toString(arr2));
     }
@@ -50,5 +51,26 @@ public class mergeTwoSortedArrays {
                 arr2[i-n] = arr3[i];
             }
         }
+    }
+
+    //optimal approach
+    //uses two pointer approach where one pointer points to last of first array and second pointer points to first of
+    //second array. first pointer moves backward and second pointer moves forward
+    public static void merge(int[] arr, int n, int[] arr2, int m){
+        int left = n-1;
+        int right = 0;
+        while (left >= 0 && right <= m-1){
+            if (arr[left] > arr2[right]){
+                int temp = arr[left];
+                arr[left] = arr2[right];
+                arr2[right] = temp;
+                left--;
+                right++;
+            } else {
+                break;
+            }
+        }
+        Arrays.sort(arr);
+        Arrays.sort(arr2);
     }
 }

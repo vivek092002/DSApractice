@@ -38,6 +38,7 @@ public class leftRotateByDPlaces {
 
     //Optimal Approach
     public static void leftRotate2(int[] arr, int d){
+        d = d % arr.length;
         reverse(arr,0,d-1);
         reverse(arr,d,arr.length-1);
         reverse(arr,0,arr.length-1);
