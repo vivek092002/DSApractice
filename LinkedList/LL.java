@@ -18,6 +18,7 @@ class Node{
 }
 
 public class LL {
+
     public static void main(String[] args) {
         Node node = new Node(10);
         node.next = new Node(20);
