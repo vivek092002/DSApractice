@@ -1,4 +1,4 @@
-package com.takeyouforward.LinkedList;
+package com.takeyouforward.LinkedList.singleLinkedList;
 
 public class deletionOfLL {
     public static void main(String[] args) {

@@ -1,21 +1,20 @@
-package com.takeyouforward.LinkedList;
+package com.takeyouforward.LinkedList.singleLinkedList;
 
-public class lengthOfLL {
+public class traversalOfLL {
     public static void main(String[] args) {
         int[] arr = {10,20,30,40,50};
         Node head = convertArr2LL(arr);
-        System.out.println(length(head));
+        traversal(head);
     }
 
-    //length
-    public static int length(Node head){
+    //traversal of LL
+    public static void traversal(Node head){
         Node temp = head;
-        int count = 0;
         while (temp != null){
+            System.out.print(temp.data + "->");
             temp = temp.next;
-            count++;
         }
-        return count;
+        System.out.print("null");
     }
 
     public static Node convertArr2LL(int[] arr){

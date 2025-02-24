@@ -1,4 +1,4 @@
-package com.takeyouforward.LinkedList;
+package com.takeyouforward.LinkedList.singleLinkedList;
 
 public class insertionInLL {
     public static void main(String[] args) {
@@ -8,7 +8,7 @@ public class insertionInLL {
         head.next.next.next = new Node(40);
         head.next.next.next.next = new Node(50);
 
-        Node temp = insertAtTail(head,5);
+        Node temp = insertAtKth(head,5,4);
         traversal(temp);
     }
 
@@ -41,4 +41,33 @@ public class insertionInLL {
         temp.next = newNode;
         return head;
     }
+
+    //insert at the key
+    public static Node insertAtKth(Node head, int element, int key){
+        if (head == null){
+            if (key == 1){
+                return new Node(element);
+            } else {
+                return null;
+            }
+        }
+        if (key == 1){
+            Node temp = new Node(element,head);
+            return temp;
+        }
+        int count = 0;
+        Node temp = head;
+        while (temp != null){
+            count++;
+            if (count == key-1){
+                Node x = new Node(element);
+                x.next = temp.next;
+                temp.next = x;
+                break;
+            }
+            temp = temp.next;
+        }
+        return head;
+    }
+
 }

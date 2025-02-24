@@ -1,4 +1,4 @@
-package com.takeyouforward.LinkedList;
+package com.takeyouforward.LinkedList.singleLinkedList;
 
 class Node{
     int data;

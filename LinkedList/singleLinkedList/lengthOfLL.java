@@ -1,14 +1,23 @@
-package com.takeyouforward.LinkedList;
+package com.takeyouforward.LinkedList.singleLinkedList;
 
-public class convertToLL {
+public class lengthOfLL {
     public static void main(String[] args) {
         int[] arr = {10,20,30,40,50};
         Node head = convertArr2LL(arr);
-        System.out.println(head.data);
-
+        System.out.println(length(head));
     }
 
-    //convert arr to linked list
+    //length
+    public static int length(Node head){
+        Node temp = head;
+        int count = 0;
+        while (temp != null){
+            temp = temp.next;
+            count++;
+        }
+        return count;
+    }
+
     public static Node convertArr2LL(int[] arr){
         Node head = new Node(arr[0]);
         Node mover = head;
