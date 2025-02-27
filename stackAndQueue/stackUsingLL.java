@@ -49,6 +49,8 @@ class Main {
         stackLL s = new stackLL();
         s.stackPush(10);
         s.stackPush(20);
+        s.stackPush(30);
+        s.stackPush(40);
         s.printStack();
         System.out.println("Element popped " + s.stackPop());
         System.out.println("Stack size: " + s.stackSize());
