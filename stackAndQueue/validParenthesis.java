@@ -21,7 +21,7 @@ public class validParenthesis {
         }
         return st.isEmpty();
     }
-
+//join
     public static void main(String[] args) {
         String str = "()[{}()]";
         if (isValid(str)){
