@@ -17,6 +17,7 @@ public class bubbleSort {
         System.out.println();
     }
 
+    //O(N^2)
     public static void sort(int[] arr, int n){
         for (int i = n-1; i >= 0 ; i--) {
             int didswap = 0;
