@@ -20,7 +20,7 @@ public class containsSubStringOrNot {
                 if (str.charAt(temp) != pattern.charAt(j)){
                     break;
                 }
-                break;
+                temp++;
             }
             if (j == m){
                 return i;
