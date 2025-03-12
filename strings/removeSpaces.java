@@ -12,7 +12,6 @@ public class removeSpaces {
         sc.close();
     }
 
-    //using string buffer
     public static String remove(String str){
         StringBuffer sb = new StringBuffer();
         for(char c : str.toCharArray()){
