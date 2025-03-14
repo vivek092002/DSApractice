@@ -3,9 +3,9 @@ package com.takeyouforward.stackAndQueue;
 import java.util.EmptyStackException;
 import java.util.Stack;
 
-public class minStack {
+public class minStack1 {
     public static void main(String[] args) {
-
+        Stack<Integer> st = new Stack<>();
     }
 
 //    Using pairs to store the value and minimum element till now.
@@ -26,7 +26,7 @@ public class minStack {
     }
 
     Stack<Pair> st;
-    public minStack(){
+    public minStack1(){
         st = new Stack<>();
     }
     public void push(int val){
