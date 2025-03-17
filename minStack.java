@@ -17,6 +17,7 @@ public class minStack {
 //      If it is then we will push the value with minimum as the previous top’s minimum.
 //      To get the getMin element to take the top’s second element.
     //optimal approach
+    /////////////////////////////////////////////////////////////////////??////////////////////////////////////////
 
     class Pair{
         int x, y;
