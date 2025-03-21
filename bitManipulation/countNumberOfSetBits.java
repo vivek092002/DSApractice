@@ -1,6 +1,6 @@
 package com.takeyouforward.bitManipulation;
 
-public class countNumberOfSetBits {
+public class  countNumberOfSetBits {
     public static void main(String[] args) {
         int n = 13;
         System.out.println(count(n));
