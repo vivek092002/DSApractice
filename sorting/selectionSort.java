@@ -20,13 +20,12 @@ public class selectionSort {
     //sorting
     public static void sort(int[] arr, int n){
         for (int i = 0; i <= n-2; i++) {
-            int min = i;
+            int min = i;            //unsorted part starting
             for (int j = i; j <= n-1; j++) {
                 if (arr[j] < arr[min]){
                     min = j;
                 }
             }
-
             int temp = arr[min];
             arr[min] = arr[i];
             arr[i] = temp;
