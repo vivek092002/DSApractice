@@ -3,8 +3,14 @@ package com.takeyouforward.heap;
 public class doesAMaxHeap {
 
     public static boolean checkMaxHeap(int[] arr, int n){
-        for (int i = 0; i < n; i++) {
-            if (arr[i] < arr[2*i + 1] || arr[i] < arr[2*i + 2]){
+        for (int i = 0; i < n / 2; i++) {  // Only check internal nodes
+            int left = 2 * i + 1;
+            int right = 2 * i + 2;
+
+            if (left < n && arr[i] < arr[left]) {  // Check left child
+                return false;
+            }
+            if (right < n && arr[i] < arr[right]) { // Check right child
                 return false;
             }
         }
