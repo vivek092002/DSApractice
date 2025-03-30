@@ -1,8 +1,6 @@
-package com.takeyouforward.strings;
+package com.takeyouforward.strings.stringPractice;
 
-import java.util.HashSet;
 import java.util.Scanner;
-import java.util.Set;
 
 public class removeSpaces {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.takeyouforward.strings;
+package com.takeyouforward.strings.stringPractice;
 
 import java.util.Scanner;
 import java.util.Stack;

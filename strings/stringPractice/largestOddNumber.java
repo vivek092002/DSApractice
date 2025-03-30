@@ -1,5 +1,5 @@
 //https://leetcode.com/problems/largest-odd-number-in-string/
-package com.takeyouforward.strings;
+package com.takeyouforward.strings.stringPractice;
 
 import java.util.Scanner;
 
