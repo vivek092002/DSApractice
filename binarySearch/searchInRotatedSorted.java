@@ -14,7 +14,7 @@ public class searchInRotatedSorted {
         }
 
         int x = Integer.parseInt(br.readLine());
-        System.out.println(search(arr,x));
+        System.out.println(search2(arr,x));
     }
 
     //Brute Force Approach
