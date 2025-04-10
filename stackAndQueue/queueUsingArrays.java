@@ -32,6 +32,7 @@ class Queue{
             end = -1;
         } else
             start = (start + 1) % size;
+
         currSize--;
         return popped;
     }
