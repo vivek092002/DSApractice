@@ -61,6 +61,7 @@ public class mthPrimeNumber {
                 }
             }
             num++;
+            //num update
         }
     }
 }
