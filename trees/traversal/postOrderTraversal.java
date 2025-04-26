@@ -1,4 +1,4 @@
-package com.takeyouforward.trees;
+package com.takeyouforward.trees.traversal;
 
 import java.util.ArrayList;
 
